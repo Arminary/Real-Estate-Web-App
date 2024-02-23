@@ -11,8 +11,13 @@ const userSchema = new mongoose.Schema({
     unique: true,
    } ,
    password: {
-    type: String
-   } 
+    type: String,
+    required: true,
+   } ,
+   avatar: {
+    type: String,
+    default: "https://www.freeiconspng.com/thumbs/profile-icon-png/profile-icon-9.png",
+   },
 
 },
     { timestamps: true }
